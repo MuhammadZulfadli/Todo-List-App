@@ -1,8 +1,12 @@
 {
   "list": [
     {
-      "name": "Ngedate Yuk?",
+      "name": "Makan",
       "id": 1
+    },
+    {
+      "name": "Tidur",
+      "id": 2
     }
   ]
 }
