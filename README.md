@@ -1,4 +1,4 @@
-# Todo List App with Jason-Serve fake Database
+# Todo List App with Jason-Server fake Database
 
 ## How to start API
 

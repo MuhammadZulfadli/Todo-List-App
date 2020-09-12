@@ -3,8 +3,8 @@
     <v-toolbar flat app>
       <v-app-bar-nav-icon class="grey--text" @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase grey--text">
-        <span class="font-weight-light">Vue</span>
-        <span>Tify</span>
+        <span class="font-weight-light">Todo</span>
+        <span>List</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <!-- <v-btn flat color="grey">
