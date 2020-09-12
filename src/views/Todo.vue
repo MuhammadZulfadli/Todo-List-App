@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     async list() {
-      const response = await axios.get("http://localhost:3000/list");
+      const response = await axios.get("http://localhost:3000/");
       this.todos = response.data;
     },
 
@@ -80,14 +80,14 @@ export default {
         name: this.newTask,
       };
       // await axios.post("http://192.168.1.44:3000/task/add", additem);
-      await axios.post("http://localhost:3000/list", additem);
+      await axios.post("http://localhost:3000/", additem);
       this.todos.push({});
       this.newTask = "";
       this.list();
     },
     async deleteTodo(param) {
       // await axios.delete(`http://192.168.1.44:3000/task/delete/${param}`);
-      await axios.delete(`http://localhost:3000/list/${param}`);
+      await axios.delete(`http://localhost:3000/${param}`);
       this.list();
     },
     edit(todo) {
@@ -102,7 +102,7 @@ export default {
       };
       await axios.put(
         // `http://192.168.1.44:3000/task/edit/${todo.id}`,
-        `http://localhost:3000/list/${todo.id}`,
+        `http://localhost:3000/${todo.id}`,
         updateItem
       );
       this.list();
